@@ -1,3 +1,10 @@
+	<!-- using the permalink() to link to a post -->
+	<!-- <h1>
+		<a href="<?php the_permalink(); ?>">
+		Check out <?php the_title(); ?>
+		</a>
+	</h1> -->
+
 <!-- using an inline style attribute to attach our hero image as a css background directly onto the element -->
 
 <!-- here we make hero have min heigh of vh100, center it, add flexbox and centre vertically and horizontally -->

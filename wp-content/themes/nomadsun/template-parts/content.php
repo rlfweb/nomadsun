@@ -21,27 +21,44 @@
 			if( get_row_layout() == 'header' ): ?>
 
 			<!-- header	-->
-	<div> 
-			<!-- header image -->
-		<div class="w-60 min-vh 100 bg-blue">
+	<div class="flex"> 
 
-		</div>
+			<!-- header background image -->
+		<div class="w-60 min-vh-100 cover bg-center" style="
+				<?php if( get_field('hero_image') ): ?>
+    		background-image: url(<?php the_field('hero_image'); ?>);
+				<?php endif; ?>"></div>
+
 			<!-- header content -->
-		<div>
-	
+		<div class="w-40 flex items-center justify-center ph4">
+			<div class="tc">
+				<!-- date -->
+				<p class="f6 archivo mt0 mb5 ttu tracked">
+				<?php echo date("F Y", strtotime(get_field('date'))); ?>
+				</p>	
+				<!-- title -->
+				<h1 class="f1 archivo mt0 mb3 ttu">
+					<?php the_title(); ?>
+				</h1>
+				<!-- subheading -->
+				<p class="f1 tenor mt0 mb3 ttu">
+					<?php the_field('subhead'); ?>
+				</p>
+				
+				<!-- header_intro -->
+				<p class="f4 cardo i measure center">
+					<?php the_sub_field('header_intro'); ?>
+				</p>
+			</div>
 		</div>
+
 	</div>
-				<!-- data shared from our hero -->
-				<?php the_field('hero_image'); ?>
-				<?php the_field('date'); ?>
-				<!-- standard wordpress data -->
-				<?php the_title(); ?>
-				<?php the_field('subhead'); ?>
-				<!-- specific to this component -->
-				<?php the_sub_field('header_intro'); ?>
 			<!-- if it’s a text component, show us the data -->
 			<?php elseif( get_row_layout() == 'text_block' ): ?>
+		<!-- text block -->
+		<div class="pv6 measure-wide center text-block f4">
 				<?php the_sub_field('text_content'); ?>
+		</div>
 			<?php endif; 
 		endwhile; endif; ?>
 	</div><!-- .entry-content -->
