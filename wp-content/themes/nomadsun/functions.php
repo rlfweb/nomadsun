@@ -183,3 +183,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Date Formatting Function 
+function nice_date($date) {
+	echo date("F Y", strtotime($date)); 
+}
+
+// Background image function
+// We pass in our image field and return it as a formatted image
+function nice_background($image_field) {
+  echo 'background-image: url(' . get_field($image_field) . ')';
+}

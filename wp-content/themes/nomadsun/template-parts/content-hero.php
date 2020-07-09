@@ -8,10 +8,7 @@
 <!-- using an inline style attribute to attach our hero image as a css background directly onto the element -->
 
 <!-- here we make hero have min heigh of vh100, center it, add flexbox and centre vertically and horizontally -->
-<section class="hero min-vh-100 cover bg-center flex items-center justify-center" style="
-<?php if( get_field('hero_image') ): ?>
-    background-image: url(<?php the_field('hero_image'); ?>);
-	<?php endif; ?>">
+<section class="hero min-vh-100 cover bg-center flex items-center justify-center" style="<?php nice_background('hero_image'); ?>">
 
 <!-- make text white and centre it -->
 	<div class="hero-content white tc">
@@ -28,7 +25,9 @@
 	<p class="date f6 archivo ma0 ttu tracked"> 
 		<?php if( get_field('date') ): ?> 
 	<!-- here we convert our date into format php can work with and format it to be month and year -->
-		<?php echo date("F Y", strtotime(get_field('date'))); ?>
+		<?php 
+		nice_date(get_field('date')); 
+		?>
 	</p>
 <?php endif; ?>
 

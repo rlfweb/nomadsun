@@ -40,3 +40,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+
+/* date underline */
+.line {
+  width: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  background-color: #1c1c1c;
+}
