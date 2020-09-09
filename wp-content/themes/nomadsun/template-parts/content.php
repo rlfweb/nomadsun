@@ -40,11 +40,11 @@
 	
 	<footer class="entry-footer">
 
+<!-- here we include our social links or share component -->
+<?php get_template_part( 'template-parts/content-share' ); ?>
+
 		<!-- here we include our explore component -->
 		<?php get_template_part( 'template-parts/content-explore' ); ?>
-
-		<!-- here we include our social component -->
-		<?php get_template_part( 'template-parts/content-social' ); ?>
 
 	</footer><!-- .entry-footer -->
 
