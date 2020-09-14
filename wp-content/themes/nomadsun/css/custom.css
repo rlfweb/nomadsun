@@ -12,21 +12,31 @@ body {
 }
 
 .archivo,
-.text-block h3 {
+.text-block h3,
+.text-block blockquote h4 {
   font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+}
+
+.text-block blockquote h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.text-block blockquote p {
+  font-size: 36px;
+  line-height: 1.33;
 }
 
 .archivo-regular {
   font-family: "Archivo", sans-serif;
 }
 
-.tenor {
+.tenor,
+.text-block blockquote p {
   font-family: "Tenor Sans", sans-serif;
-}
-
-.hero-heading,
-.hero-subhead {
-  font-size: 64px;
 }
 
 .hero-heading {
@@ -73,4 +83,33 @@ body {
 .explore-title {
   margin-bottom: 48px;
   max-width: 320px;
+}
+
+.description {
+  max-width: 860px;
+}
+
+.footer-content {
+  background-color: #1c1c1c;
+}
+
+.link:focus {
+  outline: none;
+}
+
+/* .gallery .gallery-image:first-of-type {
+  margin-top: 0;
+} */
+
+.gallery .gallery-image:last-of-type {
+  margin-bottom: 0;
+}
+
+.blockquote {
+  margin: 0;
+}
+
+.blockquote p {
+  margin-top: 0px;
+  margin-bottom: 48px;
 }

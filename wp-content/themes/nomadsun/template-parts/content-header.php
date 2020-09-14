@@ -13,7 +13,7 @@ style="<?php nice_background('hero_image'); ?>"></div>
 <div class="tc">
   <!-- date -->
   <!-- abolute position for larger screens to put the date in teh top centre -->
-  <p class="f6 archivo mt0 mb5 mb0-l ttu tracked absolute-l top-0-l left-0-l w-100-l pt4">
+  <p class="f6 archivo mt0 mb5 mb0-l ttu tracked absolute-l top-0-l left-0-l w-100-l pt5">
   <?php 
     nice_date(get_field('date')); 
   ?>
@@ -22,7 +22,7 @@ style="<?php nice_background('hero_image'); ?>"></div>
   </p>
   <!-- title -->
   <!-- change type scle for larger screens and squish the line height a bit because of bigger font size -->
-  <h1 class="f2 f1-l lh-title archivo mt0 mb4 ttu">
+  <h1 class="f2 f1-l lh-title archivo mt0 mb2 ttu">
     <?php the_title(); ?>
   </h1>
   <!-- subheading -->

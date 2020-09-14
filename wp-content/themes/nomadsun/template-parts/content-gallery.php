@@ -22,7 +22,7 @@
           <?php echo $caption; ?>
         </p>
       <?php endif; ?>
- 
+
     </div>
   <?php endforeach; ?>
 </div>
