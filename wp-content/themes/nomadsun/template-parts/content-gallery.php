@@ -9,14 +9,14 @@
     <div class="gallery-image ph3 mb4 <?php the_field('image_width', $image['id']); ?>">
       <!-- here we get each image by its ID -->
       <?php echo wp_get_attachment_image($image['id'], 'full'); ?>
-      <!-- here we use the regular weight of archivo and 
-      make it 50% opacity -->
+      
 
       <!-- here we assign our caption to a variable called $caption -->
       <?php $caption = wp_get_attachment_caption($image['id']); ?>
       
       <!-- if the caption is not empty, we render it onto the page -->
       <?php if(!empty($caption)) : ?> 
+        <!-- here we use the regular weight of archivo and make it 50% opacity -->
         <p class="caption archivo-regular f5 o-50 pt3 mv0">
           <!-- here we grab the caption by the attachment id -->
           <?php echo $caption; ?>

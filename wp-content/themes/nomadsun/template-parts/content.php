@@ -29,7 +29,6 @@
 				<!-- if it’s a gallery component, show us the images -->
 			<?php elseif ( get_row_layout() == 'gallery' ): ?>
 
-
 				<!-- here we put in our gallery component -->
 				<?php get_template_part( 'template-parts/content-gallery' ); ?>
 

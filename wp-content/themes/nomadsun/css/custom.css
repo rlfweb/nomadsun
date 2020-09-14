@@ -3,13 +3,18 @@ body {
   font-family: "Cardo", georgia, serif;
   font-size: 18px;
   line-height: 1.5;
+  /* here we smooth the body text a touch to make it clearer */
   -webkit-font-smoothing: antialiased;
 }
 
-/* wherever we use cardo class, we get cardo font */
+/* wherever we use the cardo class, we get cardo */
+
 .cardo {
   font-family: "Cardo", georgia, serif;
 }
+
+/* using the same idea as tachyons using classes that apply
+specific styles to our elements */
 
 .archivo,
 .text-block h3,
@@ -22,12 +27,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 14px;
-  margin: 0px;
-}
-
-.text-block blockquote p {
-  font-size: 36px;
-  line-height: 1.33;
+  margin: 0;
 }
 
 .archivo-regular {
@@ -37,6 +37,11 @@ body {
 .tenor,
 .text-block blockquote p {
   font-family: "Tenor Sans", sans-serif;
+}
+
+.text-block blockquote p {
+  font-size: 36px;
+  line-height: 1.33;
 }
 
 .hero-heading {
@@ -55,7 +60,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* date underline */
+/* for our date underline/overline style */
 .line {
   width: 40px;
   display: block;
@@ -65,7 +70,9 @@ body {
   background-color: #1c1c1c;
 }
 
-/* here we overwrite the size within wordpress so it scales with the page*/
+/* here we overwrite the inline size styles
+on our image so that it scales nicely with
+the page */
 .gallery-image img {
   width: auto !important;
   height: auto !important;
@@ -97,19 +104,15 @@ body {
   outline: none;
 }
 
-/* .gallery .gallery-image:first-of-type {
-  margin-top: 0;
-} */
-
 .gallery .gallery-image:last-of-type {
   margin-bottom: 0;
 }
 
-.blockquote {
+blockquote {
   margin: 0;
 }
 
-.blockquote p {
-  margin-top: 0px;
-  margin-bottom: 48px;
+blockquote p {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
